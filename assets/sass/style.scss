@@ -435,6 +435,7 @@
     cursor: pointer;
     transition: .5s;
     padding: 10px 15px !important;
+    border-radius: 15px;
 }
 .btn-enviar:hover{
     background-color: #9c042c;
@@ -442,3 +443,29 @@
 }
 
 /* seccion footer*/
+.final{
+    background-color: #000;
+    color: #fff;
+   margin-top: 20px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.final p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.mis-redes{
+    display: flex;
+    padding: 30px 0;
+}
+.final a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;  
+}
+
+.final img {
+    width: 30px;
+}
