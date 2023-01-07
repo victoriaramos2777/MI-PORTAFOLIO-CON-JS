@@ -18,7 +18,7 @@
     background-color: rgba(0, 0, 0, .7), rgba(0, 0, 0, .7);
     background-image: url('../images/fondo-inicio.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     height: 100vh;
 
 }
@@ -33,6 +33,7 @@
 
     &__header {
         width: 100%;
+        min-width: 450px;
         max-width: 1200px;
         margin: auto;
         display: flex;
@@ -42,6 +43,7 @@
 
         &__cont-h {
             width: 100%;
+            min-width: 300px;
             max-width: 1200px;
             margin: auto;
             display: flex;
@@ -98,6 +100,7 @@
 
 .presentacion {
     max-width: 1200px;
+    min-width: 450px;
     height: 100vh;
     margin: auto;
     color: #fff;
@@ -156,6 +159,7 @@
 
 #sobremi {
     max-width: 1200px;
+    min-width: 450;
     margin: auto;
     padding: 100px 15px;
     color: #111135;
@@ -249,7 +253,7 @@
     text-decoration-thickness: 5px;
 }
 
-.info {
+.inform {
     font-weight: 900;
     display: flex;
     justify-content: space-between;
@@ -264,6 +268,7 @@
 #portafolio {
     width: 100%;
     max-width: 1200px;
+    min-width: 450;
     padding: 100px 0;
     margin: auto;
 }
@@ -339,7 +344,7 @@
     color: #04979c;
     max-width: 355px;
     margin: auto;
-
+  //  margin-bottom: 2%;
 
 }
 
@@ -353,29 +358,38 @@
 
 .links {
     display: flex;
+    padding: 3%;
     justify-content: space-between;
-    max-width: 355px;
+
 
 }
 
 .links a {
-
+    color: #fff;
     font-size: 1rem;
     text-decoration: none;
-    color: #04979c;
-
     margin: auto;
 }
 
+.links a img {
+    width: 20px;
+
+}
+
 .links a:hover {
-    color: #9c042c;
+    background-color: #04979c;
+    scale: 1.5;
+    border-radius: 10%;
+    border: solid 3px #04979c;
+    transition: .5s;
 }
 
 /* seccion contacto*/
 #contac {
     padding: 100px 15px;
     background-color: #f3f3f3;
-
+    min-width: 450px;
+    max-width: 1200px;
 }
 
 .titulo {
@@ -437,35 +451,143 @@
     padding: 10px 15px !important;
     border-radius: 15px;
 }
-.btn-enviar:hover{
+
+.btn-enviar:hover {
     background-color: #9c042c;
     color: #fff;
 }
 
 /* seccion footer*/
-.final{
+.final {
     background-color: #000;
     color: #fff;
-   margin-top: 20px;
+    margin-top: 20px;
     padding: 30px 0;
     display: flex;
     justify-content: space-around;
 }
-.final p{
+
+.final p {
     color: #fff;
     font-size: 1.5rem;
 }
 
-.mis-redes{
+.mis-redes {
     display: flex;
     padding: 30px 0;
 }
-.final a{
+
+.final a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.5rem;  
+    font-size: 1.5rem;
 }
 
 .final img {
     width: 30px;
+}
+
+/* seccion responsive
+estilo para movil*/
+
+@media screen and (max-width:800px) {
+ 
+    .contenido__header__cont-h{
+        
+        justify-content:space-between;
+        margin: 0;
+
+          
+    &__title{
+        width: 1rem;
+        
+    }
+}
+    
+    #nav ul{
+    display: none;
+   }
+   #redes{
+    display: none;
+   }
+
+
+   nav.responsive {
+    display: block;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+}
+nav.responsive ul {
+    display: block !important;
+    text-align: center;
+}
+nav.responsive ul li {
+    margin: 5px 0;
+}
+   #icon-nav{
+    display: block;
+    
+   }
+ /*  .contenedor-proyect {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin: 30px 0;
+       
+    }*/
+    .presentacion{
+        
+
+      &__saludo {
+        
+    }  
+    h2{
+        font-size: 40px;
+        
+    }
+    }
+
+/* seccion sobre mi*/
+
+#sobremi {
+ padding: 50px 0;
+ display: block;
+
+}
+.sobremi-foto{
+max-width: 200px;
+margin: auto;
+
+}
+.sobremi-foto img {
+    padding: 8px;
+}
+.sobremi__titulo{
+  text-align: center;
+ h2{
+    font-size: 25px;
+    text-align: center;
+ } 
+ 
+}
+
+.sobremi a {
+    margin-left: 35%;
+}
+.inform{
+    display: flex;
+    flex-direction: column;
+}
+.inform p:hover{
+    width: 100%;
+    background-color: #04979c;
+    scale: 1.5;
+     border-radius: 50px;
+    transition: .5s;
+}
+
 }
