@@ -327,4 +327,71 @@
   color: #9c042c;
 }
 
+/* seccion contacto*/
+#contac {
+  padding: 100px 15px;
+  background-color: #f3f3f3;
+}
+
+.titulo {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
+.content-form {
+  max-width: 1200px;
+  margin: auto;
+}
+.content-form__nombre {
+  display: flex;
+  justify-content: space-between;
+}
+.content-form textarea {
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid #919191;
+}
+
+.content-f2 {
+  margin-bottom: 15px;
+}
+.content-f2__tema {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid #919191;
+}
+
+.input-n {
+  margin-bottom: 15px;
+  width: 48%;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid #919191;
+}
+
+.btn-enviar {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 10px 15px !important;
+}
+
+.btn-enviar:hover {
+  background-color: #9c042c;
+  color: #fff;
+}
+
+/* seccion footer*/
+
 /*# sourceMappingURL=style.css.map */
