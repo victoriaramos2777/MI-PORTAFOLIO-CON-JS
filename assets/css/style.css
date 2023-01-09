@@ -575,33 +575,29 @@ estilo para movil*/
   }
 }
 /*animacion*/
-@keyframes muestraMenu {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.enlaces-menu.activado {
-  display: flex;
-  animation: muestraMenu 350ms ease-in-out both;
+.hamburg {
+  cursor: pointer;
 }
 
-.br-1.animado {
-  transform: rotate(-45deg) translate(-10px, 8px);
+.bar {
+  display: block;
+  width: 32px;
+  height: 4px;
+  margin: 0;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
 }
 
-.br-2.animado {
+.hamburg.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburg.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.br-3.animado {
-  transform: rotate(45deg) translate(-10px, -8px);
-}
-
-.ham.girar:hover {
-  transform: rotate(360deg);
+.hamburg.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 /*# sourceMappingURL=style.css.map */
