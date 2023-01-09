@@ -59,12 +59,10 @@ nav{
     align-items:center;
     justify-content: space-around;
     min-height:8vh;
-    background-color: #0c0c0c;
 }
 
 .hamburg{
   display:none;
-  background-color:transparent;
   cursor: pointer;
   border:none;
   margin:0;
@@ -72,7 +70,7 @@ nav{
   }
   
   .hamburg span{
-      background-color: #f3f3f3;
+     // background-color: #f3f3f3;
       display:block;
       height:3px;
       width: 28px;
@@ -332,7 +330,7 @@ nav{
     height: 100%;
 
     filter: grayscale(1);
-    object-fit: cover;
+    object-fit: fill;
     transition: .5s;
 }
 
@@ -635,7 +633,7 @@ estilo para movil*/
     }
 
     .proyect {
-        width: 600vw;
+        width: 70%;
         margin: 10px auto;
         margin-bottom: 10px;
         height: 50vh;
