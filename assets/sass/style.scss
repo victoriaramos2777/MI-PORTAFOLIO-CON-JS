@@ -64,18 +64,18 @@ nav{
 .hamburg{
   display:none;
   cursor: pointer;
-  border:none;
+  
   margin:0;
   padding:0;
   }
   
   .hamburg span{
-     // background-color: #f3f3f3;
+    
       display:block;
-      height:3px;
-      width: 28px;
-      margin:10px auto;
-      border-radius:2px;    
+      //height:3px;
+      //width: 28px;
+      //margin:10px auto;
+         
   }
 .enlaces-menu{
     display:flex;
@@ -91,7 +91,7 @@ nav{
     text-decoration:none;
     font-size: 1.5rem;
     color:#f3f3f3;
-    font-weight:600;
+    font-weight:400;
 }
 .enlaces-menu li a:hover{
     color: #9c042c;
@@ -365,7 +365,7 @@ nav{
     color: #04979c;
     max-width: 355px;
     margin: auto;
-    //  margin-bottom: 2%;
+
 
 }
 
@@ -511,7 +511,7 @@ nav{
 /* seccion responsive
 estilo para movil*/
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
 
   #redes{
     display: none;
@@ -536,7 +536,6 @@ estilo para movil*/
 
 
     .enlaces-menu{
-      
         flex-direction:column;
         justify-content: space-around;
         align-items:center;
@@ -674,6 +673,8 @@ estilo para movil*/
     width: 32px;
     height: 4px;
     margin: 0;
+    padding: 0;
+    margin: 5px;
     background-color: #fff;
     transition: all 0.4s ease-in-out;
 

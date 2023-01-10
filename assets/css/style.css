@@ -53,17 +53,12 @@ nav {
 .hamburg {
   display: none;
   cursor: pointer;
-  border: none;
   margin: 0;
   padding: 0;
 }
 
 .hamburg span {
   display: block;
-  height: 3px;
-  width: 28px;
-  margin: 10px auto;
-  border-radius: 2px;
 }
 
 .enlaces-menu {
@@ -81,7 +76,7 @@ nav {
   text-decoration: none;
   font-size: 1.5rem;
   color: #f3f3f3;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .enlaces-menu li a:hover {
@@ -463,7 +458,7 @@ nav {
 
 /* seccion responsive
 estilo para movil*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #redes {
     display: none;
   }
@@ -584,6 +579,8 @@ estilo para movil*/
   width: 32px;
   height: 4px;
   margin: 0;
+  padding: 0;
+  margin: 5px;
   background-color: #fff;
   transition: all 0.4s ease-in-out;
 }
