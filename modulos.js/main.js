@@ -1,14 +1,16 @@
 //constantes para el menu hamburguesa y enlaces de la nav
-const menu = document.getElementById('hamburg');
-const enlacesMenu = document.getElementById('enlaces-menu');
+let menu = document.querySelector('#hamburg');
+const enlacesMenu = document.querySelector('.enlaces-menu');
 
 //evento escucha para agregar la aniamcion de los br 
-menu.addEventListener('click', () => {
+
+menu.addEventListener('click',()=>{
     menu.classList.toggle('active');
-    if(menu === "active"){
-       menu = "enlacesMenu".classList.toggle('enlaces-menu');
+   
+    if(menu.classList.contains("active")){
+        enlacesMenu.classList.add('enlaces-menu');
+    }else{
+        enlacesMenu.classList.remove('enlaces-menu');
     }
-    
-    
-    
-});
+})
+
