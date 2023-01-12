@@ -37,6 +37,8 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  position: relative;
+  width: 100%;
 }
 .contenido__header__cont-h__title {
   text-align: center;
@@ -57,15 +59,6 @@ nav {
   padding: 0;
 }
 
-/*.hamburg span{
-
-    display:block;
-    height:3px;
-    width: 28px;
-    margin:10px auto;
-
-}
-*/
 .enlaces-menu {
   display: flex;
   padding: 0;
@@ -79,7 +72,8 @@ nav {
 
 .enlaces-menu li a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin: 0 12px;
   color: #f3f3f3;
   font-weight: 400;
 }
@@ -475,6 +469,14 @@ estilo para movil*/
     right: 25px;
     transition: 0.2s 0.1s;
   }
+  .hamburg span {
+    display: block;
+    width: 34px;
+    height: 4px;
+    background-color: #fff;
+    margin: 8px auto;
+    border-radius: 2px;
+  }
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -482,14 +484,20 @@ estilo para movil*/
     padding-bottom: 25px;
   }
   .enlaces-menu {
-    display: block;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 92vh;
-    opacity: 0;
+    padding: 0;
     width: 100%;
-    left: 0;
+    height: 100vh;
+    background-color: rgba(18, 18, 18, 0.9490196078);
+    opacity: 0;
+    display: none;
+    transition: opacity 5s ease-out;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   .enlaces-menu li {
     text-align: center;
@@ -571,33 +579,38 @@ estilo para movil*/
     margin: 10px auto;
     margin-bottom: 15px;
   }
+  .hamburg {
+    cursor: pointer;
+  }
 }
 /*animacion*/
-.hamburg {
-  cursor: pointer;
+@keyframes muestraMenu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.enlaces-menu.activado {
+  display: flex;
+  animation: muestraMenu 350ms ease-in-out both;
 }
 
-.bar {
-  display: block;
-  width: 32px;
-  height: 4px;
-  margin: 0;
-  padding: 0;
-  margin: 5px;
-  background-color: #fff;
-  transition: all 0.4s ease-in-out;
+.bar1.active {
+  transform: rotate(-45deg) translate(-10px, 8px);
 }
 
-.hamburg.active .bar:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-}
-
-.hamburg.active .bar:nth-child(2) {
+.bar2.active {
   opacity: 0;
 }
 
-.hamburg.active .bar:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+.bar3.active {
+  transform: rotate(45deg) translate(-10px, -8px);
+}
+
+.hamburg.girar:hover {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */

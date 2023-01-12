@@ -19,25 +19,26 @@
     <!--seccion inicio-->
     <div class="todo">
       <section id="inicio">
+        <a name="inicio"></a>
         <div class="contenido">
           <header class="contenido__header">
             <div class="contenido__header__cont-h">
               <h1 class="contenido__header__cont-h__title">
                 Victoriaramos2777
               </h1>
-              <nav>
+              <nav class="nav">
                 <ul class="enlaces-menu" id="enlaces">
-                  <li><a href="#">Inicio</a></li>
-                  <li><a href="#">Sobre Mi</a></li>
-                  <li><a href="#">Proyectos</a></li>
-                  <li><a href="#">Contacto</a></li>
+                  <li><a href="#inicio">Inicio</a></li>
+                  <li><a href="#sobremi">Sobre Mi</a></li>
+                  <li><a href="#proyectos">Proyectos</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
                 </ul>
-                <div id="hamburg" class="hamburg" type="button">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
+                <div id="hamburg" class="hamburg">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+                  <span class="bar3"></span>
                 </div>
-                </nav>
+              </nav>
               <!--icono del menu -->
               <div id="redes">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -54,7 +55,7 @@
             <p class="presentacion__saludo__description">
               Me gusta programar y dar vida a las ideas en el navegador.
             </p>
-            <a href="#portfolio" class="descripcion">Ir a Portafolio</a>
+            <a href="#proyectos" class="descripcion">Ir a Portafolio</a>
           </div>
         </div>
       </section>
@@ -63,13 +64,14 @@
 
       <main>
         <section id="sobremi">
+          <a name="sobremi"></a>
           <div class="sobremi-foto">
             <img src="./assets/images/foto.jpeg" alt="fotografia" />
           </div>
           <div class="sobremi">
             <p class="sobremi__titulo">Sobre Mi</p>
-            <h2>Hola, soy <span>Victoria Ramos</span></h2>
-            <h3>Desarrolladora Web Front End.</h3>
+            <h2 class="typing">Hola, soy <span>Victoria Ramos</span></h2>
+            <h3 class="typing">Desarrolladora Web Front End.</h3>
             <p>
               Soy hondureña. Me considero una persona
               responsable,alegre,optimista,honesta,positiva,con ganas deseo de
@@ -90,6 +92,8 @@
 
         <!--seccion portafolio]-->
         <section id="portafolio">
+          <a name="proyectos"></a>
+          <a href="#"></a>
           <h3 class="portafolio-title">Mis Proyectos</h3>
           <div class="contenedor-proyect">
             <div class="proyect">
@@ -340,19 +344,26 @@
         </section>
         <!--seccion form contacto-->
         <section id="contact">
+          <a name="contacto"></a>
           <h3 class="titulo">Contactame ahora</h3>
           <div class="content-form">
-            <form action="">
+            <form
+             action="https://formspree.io/f/mzbwwwge"
+              method="POST"
+              id="form"
+            >
               <div class="content-form__nombre">
                 <input
                   type="text"
                   placeholder="Nombre Completo"
                   class="input-n"
+                  name="name"
                 />
                 <input
                   type="email"
                   placeholder="Direccion de Email"
-                  class="input-n"
+                  class="input-n" id="enviar"
+                  name="email"
                 />
               </div>
               <div class="content-f2">
@@ -360,20 +371,21 @@
                   type="text"
                   placeholder="Tema..."
                   class="content-f2__tema"
+                  name="message"
                 />
               </div>
 
               <div class="content-f2">
                 <textarea
-                  name=""
-                  id=""
+                  name="message"
+                  id="mensaje"
                   cols="30"
                   rows="10"
                   placeholder="Tu Mensaje..."
                   class="content-f2__tema"
                 ></textarea>
               </div>
-              <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+              <input type="submit" value="Enviar Mensaje" class="btn-enviar" id="submit">
             </form>
           </div>
         </section>
