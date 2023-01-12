@@ -16,20 +16,25 @@ hamburg.addEventListener('click', () => {
 });
 
 //const para llamar la form
-const form = document.getElementById("form");
+const mainForm = document.getElementById("form");
 
-
-
-form.addEventListener( "submit" , (event) =>{
+mainForm.addEventListener( "submit" , (event) =>{
     event.preventDefault();
+    let validNombre = document.getElementById('nombre').value;
+    let validCorreo = document.getElementById('enviar').value;
+    let validMensaje = document.getElementById('tema').value;
+    let validTextarea = document.getElementById('mensaje').value;
 
-    document.write("<h1>Gracias por su mensaje</h1>");
+    if (validNombre) {
+        console.dir(mainForm);
+    }
     
-    });
-
-document.addEventListener("DOMContentLoaded",function(){
-    document.getElementById("form").addEventListener('submit',validarForm);
 });
+
+document.getElementById('submit').addEventListener('click', () => {
+    mainForm.submit();
+})
+
 function validarForm(e){
     e.preventDefault();
     let name = document.getElementById("mensaje").value;
@@ -39,7 +44,7 @@ function validarForm(e){
     }
     
 } 
-    
+     
 
-let reCorto = /\S+@\S+\.\S+/
-reCorto.test('prueba@correo.com');
+let confirCorreo= /\S+@\S+\.\S+/
+confirCorreo.test('prueba@correo.com');

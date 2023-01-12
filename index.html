@@ -348,12 +348,12 @@
           <h3 class="titulo">Contactame ahora</h3>
           <div class="content-form">
             <form
-             action="https://formspree.io/f/mzbwwwge"
-              method="POST"
+              action="https://formspree.io/f/mzbwwwge"
+              method="post"
               id="form"
             >
               <div class="content-form__nombre">
-                <input
+                <input id="nombre"
                   type="text"
                   placeholder="Nombre Completo"
                   class="input-n"
@@ -362,12 +362,13 @@
                 <input
                   type="email"
                   placeholder="Direccion de Email"
-                  class="input-n" id="enviar"
+                  class="input-n"
+                  id="enviar"
                   name="email"
                 />
               </div>
               <div class="content-f2">
-                <input
+                <input id="tema"
                   type="text"
                   placeholder="Tema..."
                   class="content-f2__tema"
@@ -404,6 +405,6 @@
       </footer>
     </div>
 
-    <script src="./modulos.js/main.js"></script>
+    <script src="./modulos.js/main.js" type="module"></script>
   </body>
 </html>
