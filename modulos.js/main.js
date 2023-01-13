@@ -4,6 +4,9 @@ const hamburg= document.querySelector('.hamburg');
 const enlaces = document.querySelector('.enlaces-menu');
 const barras = document.querySelectorAll('.hamburg span');
 
+//const para llamar la form
+const form = document.getElementById('form');
+
 //const para el efecto typing
 
 //evento escucha para agregar la aniamcion de los br 
@@ -15,36 +18,23 @@ hamburg.addEventListener('click', () => {
 
 });
 
-//const para llamar la form
-const mainForm = document.getElementById("form");
 
-mainForm.addEventListener( "submit" , (event) =>{
+
+form.addEventListener( "submit", (event) =>{
     event.preventDefault();
-    let validNombre = document.getElementById('nombre').value;
-    let validCorreo = document.getElementById('enviar').value;
-    let validMensaje = document.getElementById('tema').value;
-    let validTextarea = document.getElementById('mensaje').value;
-
-    if (validNombre) {
-        console.dir(mainForm);
+         let validarNombre = document.getElementById('nombre').value?true:false;
+          let validarCorreo =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/.test(document.getElementById('enviar').value);
+         let  validarMensaje = document.getElementById('tema').value?true:false;
+         let  validarTextarea = document.getElementById('mensaje').value?true:false;
+    console.log(validarCorreo)
+    if (validarNombre && validarCorreo && validarMensaje && validarTextarea) {
+        console.log("entra");
+        form.submit();
     }
-    
+   
+   
 });
 
-document.getElementById('submit').addEventListener('click', () => {
-    mainForm.submit();
-})
 
-function validarForm(e){
-    e.preventDefault();
-    let name = document.getElementById("mensaje").value;
-    if (name.length === 0) {
-       alert('No ha escrito nada') ;
-       return;
-    }
-    
-} 
-     
 
-let confirCorreo= /\S+@\S+\.\S+/
-confirCorreo.test('prueba@correo.com');
+

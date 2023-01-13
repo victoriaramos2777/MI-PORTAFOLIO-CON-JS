@@ -348,9 +348,10 @@
           <h3 class="titulo">Contactame ahora</h3>
           <div class="content-form">
             <form
+            id="form"
+            class="form"
               action="https://formspree.io/f/mzbwwwge"
-              method="post"
-              id="form"
+              method="POST"
             >
               <div class="content-form__nombre">
                 <input id="nombre"
@@ -360,10 +361,10 @@
                   name="name"
                 />
                 <input
-                  type="email"
+                id="enviar"
+                  type="text"
                   placeholder="Direccion de Email"
                   class="input-n"
-                  id="enviar"
                   name="email"
                 />
               </div>
@@ -378,15 +379,15 @@
 
               <div class="content-f2">
                 <textarea
+                id="mensaje"
                   name="message"
-                  id="mensaje"
                   cols="30"
                   rows="10"
                   placeholder="Tu Mensaje..."
                   class="content-f2__tema"
                 ></textarea>
               </div>
-              <input type="submit" value="Enviar Mensaje" class="btn-enviar" id="submit">
+              <button type="submit"  class="btn-enviar" id="envia">Enviar</button>
             </form>
           </div>
         </section>
