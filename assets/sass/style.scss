@@ -15,12 +15,12 @@ html {
 
 
 #inicio {
-    background-color: rgba(0, 0, 0, .7), rgba(0, 0, 0, .7);
-    background-image: url('../images/fondo-inicio.jpg');
+    background-color: rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7);
+    background-image: url('../images/Imagen\ de\ WhatsApp\ 2023-01-14\ a\ las\ 00.57.55.jpg');
     background-size: cover;
     background-position: center center;
     height: 100vh;
-
+    
 }
 
 .contenido {
@@ -428,6 +428,7 @@ nav{
 
     &__nombre {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -453,13 +454,13 @@ nav{
 }
 
 .input-n {
+
     margin-bottom: 15px;
-    width: 48%;
     padding: 20px;
     border-radius: 20px;
     border: none;
     border: 1px solid #919191;
-
+    
 }
 
 .btn-enviar {
@@ -507,6 +508,22 @@ nav{
     width: 30px;
 }
 
+.resp {
+    display:flex;
+    justify-content: center;
+     margin: 2%;
+    color: #9c042c;
+    position: absolute;
+    
+}
+.mi-alert{
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    margin: 2%;
+    color: #9c042c;
+    
+}
 /* seccion responsive
 estilo para movil*/
 
@@ -704,6 +721,13 @@ estilo para movil*/
  .hamburg.girar:hover{
      transform:rotate(360deg);
  }
+
+.resp .mi-alert{
+    display: flex;
+    justify-content: center;
+  //  width: 400px;
+    color: #9c042c;
+}
 
 
 

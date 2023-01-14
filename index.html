@@ -352,8 +352,9 @@
             class="form"
               action="https://formspree.io/f/mzbwwwge"
               method="POST"
-            >
+              >
               <div class="content-form__nombre">
+                <div id="mensajeRespuesta"> </div>
                 <input id="nombre"
                   type="text"
                   placeholder="Nombre Completo"
@@ -362,11 +363,12 @@
                 />
                 <input
                 id="enviar"
-                  type="text"
-                  placeholder="Direccion de Email"
-                  class="input-n"
-                  name="email"
+                type="text"
+                placeholder="Direccion de Email"
+                class="input-n"
+                name="email"
                 />
+                <div id="alert-correo"> </div>
               </div>
               <div class="content-f2">
                 <input id="tema"
@@ -375,6 +377,7 @@
                   class="content-f2__tema"
                   name="message"
                 />
+                <div id="mensajeRespuesta"> </div>
               </div>
 
               <div class="content-f2">
@@ -386,8 +389,9 @@
                   placeholder="Tu Mensaje..."
                   class="content-f2__tema"
                 ></textarea>
+                <div id="mensajeRespuesta"> </div>
               </div>
-              <button type="submit"  class="btn-enviar" id="envia">Enviar</button>
+              <input type="submit"  value="Enviar mensaje" class="btn-enviar" >
             </form>
           </div>
         </section>
