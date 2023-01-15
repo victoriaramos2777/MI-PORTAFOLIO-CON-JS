@@ -38,20 +38,18 @@ form.addEventListener("submit", (event) => {
     validarNombre.length === 0 ||
     validarTextarea.length === 0
   ) {
-    miRespuesta.innerHTML =`<p><span class="resp">Debes llenar todos los espacio!</span></p>`;
+    miRespuesta.innerText ="Debes llenar todos los espacio!";
     
   }
   
 
   if (validarCorreo==enviar.value) {
-    valido.innerHTML=`<p class="mi-alert">Por favor, escribe un correo electrónico válido!</p>`;
-    //alert("escribe tu correo");
-
+    valido.innerText="Por favor, escribe un correo electrónico válido!";
+    
 
   }
+  
  //Se pueden enviar los datos del formulario al servidor
 }
-
-
 
 );

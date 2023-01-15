@@ -28,10 +28,10 @@
               </h1>
               <nav class="nav">
                 <ul class="enlaces-menu" id="enlaces">
-                  <li><a href="#inicio">Inicio</a></li>
-                  <li><a href="#sobremi">Sobre Mi</a></li>
-                  <li><a href="#proyectos">Proyectos</a></li>
-                  <li><a href="#contacto">Contacto</a></li>
+                  <li><a href="#inicio" id="quitar">Inicio</a></li>
+                  <li><a href="#sobremi" id="quitar">Sobre Mi</a></li>
+                  <li><a href="#proyectos" id="quitar">Proyectos</a></li>
+                  <li><a href="#contacto" id="quitar">Contacto</a></li>
                 </ul>
                 <div id="hamburg" class="hamburg">
                   <span class="bar1"></span>
@@ -50,7 +50,7 @@
           <div class="presentacion">
             <p class="presentacion__saludo">Bienvenidos</p>
             <h2>
-              Soy <span>Victoria Ramos</span>,Desarrolladora Web Front End.
+              Soy <span>Victoria Ramos</span>,Desarrolladora Web     Front End.
             </h2>
             <p class="presentacion__saludo__description">
               Me gusta programar y dar vida a las ideas en el navegador.
@@ -345,7 +345,7 @@
         <!--seccion form contacto-->
         <section id="contact">
           <a name="contacto"></a>
-          <h3 class="titulo">Contactame ahora</h3>
+          <h3 class="titulo">Contactame</h3>
           <div class="content-form">
             <form
             id="form"
@@ -353,8 +353,8 @@
               action="https://formspree.io/f/mzbwwwge"
               method="POST"
               >
+              <div ><span id="mensajeRespuesta"> </span></div>
               <div class="content-form__nombre">
-                <div id="mensajeRespuesta"> </div>
                 <input id="nombre"
                   type="text"
                   placeholder="Nombre Completo"
@@ -368,8 +368,8 @@
                 class="input-n"
                 name="email"
                 />
-                <div id="alert-correo"> </div>
               </div>
+              <div> <span  id="alert-correo"></span></div>
               <div class="content-f2">
                 <input id="tema"
                   type="text"
@@ -377,8 +377,8 @@
                   class="content-f2__tema"
                   name="message"
                 />
-                <div id="mensajeRespuesta"> </div>
               </div>
+              <div ><span id="mensajeRespuesta"> </span></div>
 
               <div class="content-f2">
                 <textarea
@@ -389,7 +389,7 @@
                   placeholder="Tu Mensaje..."
                   class="content-f2__tema"
                 ></textarea>
-                <div id="mensajeRespuesta"> </div>
+                <div ><span id="mensajeRespuesta"> </span></div>
               </div>
               <input type="submit"  value="Enviar mensaje" class="btn-enviar" >
             </form>
