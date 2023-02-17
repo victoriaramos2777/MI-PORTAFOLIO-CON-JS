@@ -122,7 +122,7 @@ nav {
   justify-content: center;
 letter-spacing: .3rem;
   &__saludo {
-    font-size: 16px;
+    font-size: 19px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -130,7 +130,7 @@ letter-spacing: .3rem;
     &__description {
       max-width: 700px;
       margin: 25px auto;
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
     }
   }
@@ -191,7 +191,7 @@ letter-spacing: .3rem;
   margin: 0 40px;
 
   &__titulo {
-    font-size: 22px;
+    font-size: 29px;
     font-weight: 500;
     text-transform: uppercase;
     color: #111135;
@@ -201,10 +201,11 @@ letter-spacing: .3rem;
   }
 
   p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 25px;
     color: #565656;
     margin-bottom: 12px;
+    letter-spacing: 2px;
   }
 
   h2 {
@@ -554,7 +555,7 @@ estilo para movil*/
     }
 
     h2 {
-      font-size: 40px;
+      font-size: 20px;
       margin: 0;
     }
     p {

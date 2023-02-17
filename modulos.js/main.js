@@ -7,11 +7,10 @@ const barras = document.querySelectorAll(".hamburg span");
 const form = document.getElementById("form");
 
 //const para efecto  maquina de escribir 
-const maquina1 = document.getElementById('maquina-escribir1');
-const maquina2 = document.getElementById('maquina-escribir2');
-const maquina3 = document.getElementById('maquina-escribir3');
-const maquina4 = document.getElementById('maquina-escribir4');
-const maquina5 = document.getElementById('maquina-escribir5');
+const maquina1 = document.getElementById('escribir1');
+const maquina2 = document.getElementById('escribir2');
+const maquina3 = document.getElementById('escribir3');
+const maquina4 = document.getElementById('escribir4');
 
 //evento escucha para agregar la aniamcion de los br
 
@@ -58,3 +57,21 @@ form.addEventListener("submit", (event) => {
 }
 
 );
+
+
+// funcones para el efecto maquina 
+
+const maquinaEscribir1 = (text = '',tiempo = 200, etiqueta = '') => {
+  let arrayCaracteres = text.split('')
+  etiqueta.innerHTML = ''
+  let cont = 0
+  let escribir = setInterval(function(){
+    etiqueta.innerHTML += arrayCaracteres[cont]
+    cont++
+    if (cont === arrayCaracteres.length) {
+      clearInterval(escribir)
+    }
+  }, tiempo)
+}
+
+maquinaEscribir1("Bienvenidos",300, maquina1);
