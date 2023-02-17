@@ -6,7 +6,12 @@ const barras = document.querySelectorAll(".hamburg span");
 //const para llamar la form
 const form = document.getElementById("form");
 
-
+//const para efecto  maquina de escribir 
+const maquina1 = document.getElementById('maquina-escribir1');
+const maquina2 = document.getElementById('maquina-escribir2');
+const maquina3 = document.getElementById('maquina-escribir3');
+const maquina4 = document.getElementById('maquina-escribir4');
+const maquina5 = document.getElementById('maquina-escribir5');
 
 //evento escucha para agregar la aniamcion de los br
 
