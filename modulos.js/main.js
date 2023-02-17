@@ -61,7 +61,7 @@ form.addEventListener("submit", (event) => {
 
 // funcones para el efecto maquina 
 
-const maquinaEscribir1 = (text = '',tiempo = 200, etiqueta = '') => {
+const maquinaEscribir1 = (text = '',tiempo = 300, etiqueta = '') => {
   let arrayCaracteres = text.split('')
   etiqueta.innerHTML = ''
   let cont = 0
@@ -74,4 +74,49 @@ const maquinaEscribir1 = (text = '',tiempo = 200, etiqueta = '') => {
   }, tiempo)
 }
 
-maquinaEscribir1("Bienvenidos",300, maquina1);
+maquinaEscribir1("Bienvenidos",100, maquina1);
+
+const maquinaEscribir2 = (text = '',tiempo = 200, etiqueta = '') => {
+  let arrayCaracteres = text.split('')
+  etiqueta.innerHTML = ''
+  let cont = 0
+  let escribir = setInterval(function(){
+    etiqueta.innerHTML += arrayCaracteres[cont]
+    cont++
+    if (cont === arrayCaracteres.length) {
+      clearInterval(escribir)
+    }
+  }, tiempo)
+}
+maquinaEscribir2(" Desarrolladora Web Front End.",100, maquina2)
+
+const maquinaEscribir3 = (text = '',tiempo = 200, etiqueta = '') => {
+  let arrayCaracteres = text.split('')
+  etiqueta.innerHTML = ''
+  let cont = 0
+  
+  let escribir = setInterval(function(){
+    etiqueta.innerHTML += arrayCaracteres[cont]
+    cont++
+    if (cont === arrayCaracteres.length) {
+      clearInterval(escribir)
+    }
+  }, tiempo)
+}
+
+maquinaEscribir3(" Victoria Ramos",100, maquina3);
+
+const maquinaEscribir4 = (text = '',tiempo = 100, etiqueta = '') => {
+  let arrayCaracteres = text.split('')
+  etiqueta.innerHTML = ''
+  let cont = 0
+  let escribir = setInterval(function(){
+    etiqueta.innerHTML += arrayCaracteres[cont]
+    cont++
+    if (cont === arrayCaracteres.length) {
+      clearInterval(escribir)
+    }
+  }, tiempo)
+}
+
+maquinaEscribir4(" Me gusta programar y dar vida a las ideas en el navegador.  ",100, maquina4)

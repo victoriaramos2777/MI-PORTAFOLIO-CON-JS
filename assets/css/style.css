@@ -117,7 +117,7 @@ nav {
   letter-spacing: 0.3rem;
 }
 .presentacion__saludo {
-  font-size: 19px;
+  font-size: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -129,12 +129,12 @@ nav {
   text-align: center;
 }
 .presentacion h2 {
-  font-size: 55px;
+  font-size: 30px;
   margin-bottom: 25px;
   text-align: center;
 }
 .presentacion span {
-  font-size: 25px;
+  font-size: 50px;
   color: #9c042c;
 }
 
