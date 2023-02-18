@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?ht@200;300;400;500;600&family=Montserrat:wgdisplay=swap");
 
 * {
   margin: 0;
@@ -45,6 +45,7 @@ html {
       &__title {
         text-align: center;
         color: #9c042c;
+        text-decoration: none;
       }
     }
   }
@@ -499,6 +500,10 @@ letter-spacing: .3rem;
 estilo para movil*/
 
 @media screen and (max-width: 900px) {
+  body{
+    margin: 0%;
+    padding: 0%;
+  }
   #redes {
     display: none;
   }
@@ -539,7 +544,6 @@ estilo para movil*/
     opacity: 0;
     display: none;
     transition: opacity 5s ease-out;
-    width: 50%;
     position: absolute;
     right: 0;
     top: 0;
@@ -692,4 +696,64 @@ estilo para movil*/
 
 .hamburg.girar:hover {
   transform: rotate(360deg);
+}
+
+
+@media screen and (max-width: 700px)  {
+
+
+  body{
+    margin: 0%;
+    padding: 0%;
+  }
+  #inicio{
+    width: 100%;
+  }
+
+  .contenido{
+    width: 100vw;
+  }
+  .hamburg span {
+    display: block;
+    width: 34px;
+    height: 4px;
+    background-color: #fff;
+    margin: 8px auto;
+    border-radius: 2px;
+  }
+
+.presentacion {
+  width: 100%;
+  margin: 0%;
+  padding: 0;
+  &__saludo {
+    font-size: 2em;
+    line-height: 00px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  p {
+    margin: 5%;
+    font-size: 1.5em;
+  }
+  span{
+    font-size: 2rem;
+  }
+}
+.contenido__header__cont-h{
+  margin: auto;
+  padding: 0%;
+
+  width: 100%;
+  &__title{
+    font-size: 1.5em;
+  }
+}
+
+
+
+
 }
