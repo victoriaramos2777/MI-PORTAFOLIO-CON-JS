@@ -59,7 +59,7 @@ form.addEventListener("submit", (event) => {
 );
 
 
-// funcones para el efecto maquina 
+// funciones para el efecto maquina 
 
 const maquinaEscribir1 = (text = '',tiempo = 300, etiqueta = '') => {
   let arrayCaracteres = text.split('')
@@ -119,4 +119,4 @@ const maquinaEscribir4 = (text = '',tiempo = 100, etiqueta = '') => {
   }, tiempo)
 }
 
-maquinaEscribir4(" Me gusta programar y dar vida a las ideas en el navegador.  ",100, maquina4)
+maquinaEscribir4(" Me gusta programar y dar vida a las ideas en el navegador.  ",100, maquina4);
