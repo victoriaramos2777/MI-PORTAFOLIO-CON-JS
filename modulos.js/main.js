@@ -6,7 +6,11 @@ const barras = document.querySelectorAll(".hamburg span");
 //const para llamar la form
 const form = document.getElementById("form");
 
-
+//const para efecto  maquina de escribir 
+const maquina1 = document.getElementById('escribir1');
+const maquina2 = document.getElementById('escribir2');
+const maquina3 = document.getElementById('escribir3');
+const maquina4 = document.getElementById('escribir4');
 
 //evento escucha para agregar la aniamcion de los br
 
@@ -54,6 +58,7 @@ form.addEventListener("submit", (event) => {
 
 );
 
+
 // funciones para el efecto maquina 
 
 const maquinaEscribir1 = (text = '',tiempo = 300, etiqueta = '') => {
@@ -100,3 +105,18 @@ const maquinaEscribir3 = (text = '',tiempo = 200, etiqueta = '') => {
 }
 
 maquinaEscribir3(" Victoria Ramos",100, maquina3);
+
+const maquinaEscribir4 = (text = '',tiempo = 100, etiqueta = '') => {
+  let arrayCaracteres = text.split('')
+  etiqueta.innerHTML = ''
+  let cont = 0
+  let escribir = setInterval(function(){
+    etiqueta.innerHTML += arrayCaracteres[cont]
+    cont++
+    if (cont === arrayCaracteres.length) {
+      clearInterval(escribir)
+    }
+  }, tiempo)
+}
+
+maquinaEscribir4(" Me gusta programar y dar vida a las ideas en el navegador.  ",100, maquina4);
